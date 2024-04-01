@@ -1,0 +1,47 @@
+/* Navbar.css */
+.bar {
+    background-color: rgba(245, 245, 220, 0.915); /* Change the background color to beige */
+}
+
+.menuButtonWrapper {
+    display: none;
+    margin-left: auto; /* Initially hide the menu button */
+}
+
+.navButtons {
+    display: flex;
+    margin-left: auto; /* Align navButtons to the right */
+}
+
+@media (max-width: 600px) {
+    .menuButtonWrapper {
+        display: block; /* Show the menu button on smaller screens */
+    }
+
+    .navButtons {
+        display: none; /* Hide the navigation buttons on smaller screens */
+    }
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer img {
+    margin-right: 10px;
+    width: 110px; /* Adjust the height of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logoImage {
+    width: 130px; /* Adjust the height of the icons */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Adjust the alignment of components on toolbar */
+.Toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

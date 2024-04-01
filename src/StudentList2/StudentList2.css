@@ -1,0 +1,51 @@
+/* StudentList2.css */
+
+.container {
+    margin-top: 100px;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pagination-rows-per-page {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-select {
+    margin-left: 10px;
+  }
+  
+  .pagination-navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-button {
+    margin-left: 10px;
+  }
+  
+  .predict-button {
+    position: absolute;
+    margin: 100px ;
+    right: 0;
+  }

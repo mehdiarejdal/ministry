@@ -1,0 +1,23 @@
+/* StudentDetails.css */
+
+.details-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .prediction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .prediction-item {
+    margin-bottom: 5px;
+  }
+  
