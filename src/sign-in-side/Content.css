@@ -1,0 +1,19 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer .logoImage {
+  
+    margin-right: 10px;
+    width: 110px; /* Adjust the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 600px) {
+    .logoContainer{
+        display: none;
+    }
+    .logoContainer .logoImage{
+        display: none;
+    }
+}

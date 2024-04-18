@@ -42,7 +42,7 @@ function StudentDetails({ student }) {
       <TableCell>
         <div className="details-container">
           <h3 className="heading">Explainability</h3>
-          {/* <img src={student.explainabilityImage} alt="Explainability Image" /> */}
+          <p>No Explainability Available</p>
         </div>
       </TableCell>
     </TableRow>

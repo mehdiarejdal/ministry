@@ -11,18 +11,22 @@
 }
 
 .content h2 {
-  color: orange; /* Set color of h2 to orange */
+  color: rgba(255, 77, 0, 0.66);
+  font-size: 2.3em; /* Increase font size of h2 */
 }
 
 .content p {
   text-align: justify; /* Justify the text */
-  line-height: 1.5; /* Increase line height for better readability */
+  line-height: 1.7; /* Increase line height for better readability */
   margin: 20px auto; /* Add margin for spacing */
   max-width: 600px; /* Set maximum width for better readability */
+  font-family: Arial, sans-serif; /* Set a specific font family */
+  font-size: 1.1em; /* Increase font size for p element */
+  
 }
 
 /* Style for the boxes */
-.boxes {
+.Dews.boxes {
   display: flex; /* Use flexbox for boxes container */
   justify-content: space-around; /* Space evenly between boxes */
   flex-wrap: wrap; /* Allow flex items to wrap to the next line */
@@ -37,7 +41,11 @@
   width: 335px;
   height: auto; /* Set width of boxes */
   margin: 20px; /* Add margin between boxes */
-  
+  line-height: 1.7; /* Increase line height for better readability */
+  margin: 20px auto; /* Add margin for spacing */
+  max-width: 600px; /* Set maximum width for better readability */
+  font-family: Arial, sans-serif; /* Set a specific font family */
+  font-size: 1.1em; /* Increase font size for p element */
 }
 
 .box img {

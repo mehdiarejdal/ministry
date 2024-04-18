@@ -1,4 +1,5 @@
 /* Navbar.css */
+
 .bar {
     background-color: rgba(245, 245, 220, 0.915); /* Change the background color to beige */
 }
@@ -15,11 +16,17 @@
 
 @media (max-width: 600px) {
     .menuButtonWrapper {
-        display: block; /* Show the menu button on smaller screens */
+        display: block; 
     }
 
     .navButtons {
         display: none; /* Hide the navigation buttons on smaller screens */
+    }
+
+    .logoContainer img {
+        margin-right: 5px;
+        width: 40px; /* Adjust the width of the icons for smaller screens */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
@@ -28,15 +35,11 @@
     align-items: center;
 }
 
-.logoContainer img {
+.logoContainer .logoImage {
+  
     margin-right: 10px;
-    width: 110px; /* Adjust the height of the icons */
+    width: 110px; /* Adjust the width of the icons */
     height: auto; /* Maintain aspect ratio */
-}
-
-.logoImage {
-    width: 130px; /* Adjust the height of the icons */
-    height: auto;  /* Maintain aspect ratio */
 }
 
 /* Adjust the alignment of components on toolbar */
@@ -44,4 +47,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+.navButtons .loginbutton{
+
+    background-color: whitesmoke;
+    color:rgb(4, 51, 161);
+    
+}
+.navButtons .loginbutton:hover{
+
+    color: beige;
+    background-color:rgb(4, 51, 161);
+    margin: raduis 10%;
 }

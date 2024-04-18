@@ -1,0 +1,11 @@
+.login {
+  @apply  w-screen h-screen flex flex-col justify-center items-center bg-slate-50 font-inn;
+}
+
+.center {
+  @apply w-screen sm:w-4/6 lg:min-w-[1113px] h-4/6  rounded-lg flex flex-row overflow-hidden;
+}
+
+.right {
+  @apply w-screen lg:w-auto lg:min-w-[448px]  h-full grid place-items-center bg-white ;
+} 

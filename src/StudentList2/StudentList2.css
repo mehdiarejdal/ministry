@@ -16,10 +16,12 @@
     margin-bottom: 1rem;
   }
   
-  .table-container {
-    margin-top: 20px;
+  .container .table-container {
+    margin-top: 40px;
   }
-  
+  .container .studenttable {
+    margin-top: 40px;
+  }
   .pagination {
     margin-top: 20px;
     display: flex;
@@ -44,8 +46,61 @@
     margin-left: 10px;
   }
   
-  .predict-button {
+  .container .search-banner .predict-button {
     position: absolute;
-    margin: 100px ;
-    right: 0;
+    margin-top: auto;
+    margin-right: 10px ;
+    height: 55px;
+    width: 100px;
+    display: none;
+    
+    
   }
+  
+  
+
+  /* Media Query for screens less than 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 50px;
+    
+  }
+
+  .text-2xl {
+    font-size: 1.2rem;
+  }
+
+  .mb-4 {
+    margin-bottom: 0.5rem;
+  }
+ .container .studenttable .classgrade{
+  display: none;
+ }
+ .container .studenttable .classgraderow{
+  display: none;
+ }
+ .container .search-banner .predict-button {
+  position: absolute;
+  margin-top: auto;
+  margin-right: 10px;
+  height: 55px;
+  width: 80px;
+  
+  
+}
+.container .studenttable .level {
+  display :none;
+ }
+.container .studenttable .grade {
+  display :none;
+ }
+
+
+  
+
+  
+
+  
+
+
+}

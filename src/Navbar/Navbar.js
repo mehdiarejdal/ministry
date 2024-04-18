@@ -3,7 +3,7 @@ import React from 'react';
 import { AppBar, Toolbar, IconButton, Button, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Import CSS file
+import './Navbar.css'; 
 import um6pLogoImage from './UM6P_logo.png';
 import ministereEducationImage from './ministere-education.png';
 
@@ -18,17 +18,20 @@ const Navbar = () => {
     };
 
     return (
-        <AppBar position="static" className=''>
+        <AppBar position="" className=''>
             <Toolbar>
                 <div className="logoContainer">
                     <img src={um6pLogoImage} alt="UM6P Logo" className="logoImage" />
                     <img src={ministereEducationImage} alt="Ministere Education" className="logoImage" />
                 </div>
                 <div className="navButtons">
-                    <Button component={Link} to="/" color="inherit">Home</Button>
-                    <Button component={Link} to="/dataanalysis" color="inherit">Data Analysis</Button>
+                    <Button component={Link} to="/dews" color="inherit">Home</Button>
+                    <Button component={Link} to="/dashboard" color="inherit">Data Analysis</Button>
                     <Button component={Link} to="/studentlist" color="inherit">Student List</Button>
-                    <Button component={Link} to="/atrisk" color="inherit">At Risk</Button>
+                    <Button component={Link} to="/ChooseModel" color="inherit">Customize Model</Button>
+                    <div className='loginbutton'>
+                    <Button component={Link} to="/" color="inherit">Login</Button>
+                    </div>
                 </div>
                 <div className="menuButtonWrapper">
                     <IconButton
@@ -45,7 +48,7 @@ const Navbar = () => {
             </Toolbar>
             <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <List>
-                    {['','DataAnalysis', 'StudentList', 'Atrisk'].map((text, index) => (
+                    {['dews','DataAnalysis', 'StudentList', 'Atrisk'].map((text, index) => (
                         <ListItem button key={text} component={Link} to={`/${text.toLowerCase()}`}>
                             <ListItemText primary={text} />
                         </ListItem>
